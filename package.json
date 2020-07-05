@@ -1,0 +1,19 @@
+{
+  "name": "firebase-auto-env",
+  "version": "1.0.0",
+  "description": "read .env for firebase",
+  "main": "bin/index.js",
+  "scripts": {
+    "test": "test",
+    "build": "tsc"
+  },
+  "bin": {
+    "faenv": "bin/index.js"
+  },
+  "keywords": [
+    "firebase",
+    "env"
+  ],
+  "author": "tkow",
+  "license": "MIT"
+}
