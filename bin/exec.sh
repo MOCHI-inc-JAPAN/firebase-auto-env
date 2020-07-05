@@ -18,3 +18,5 @@ do
 done ;
 
 firebase functions:config:set ${args[@]}
+
+echo ${args[@]}
