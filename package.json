@@ -1,6 +1,6 @@
 {
   "name": "firebase-auto-env",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "read .env for firebase",
   "main": "bin/index.js",
   "scripts": {
