@@ -11,13 +11,13 @@ function parseArgs() {
     if (_evalArgs.length <= 0)
         _evalArgs.push('.env');
     if (_evalArgs.length < 2) {
-        var packageJson = JSON.parse(fs_1.default.readFileSync(process.cwd() + "/package.json", 'utf8'));
+        var packageJson = JSON.parse(fs_1.default.readFileSync("".concat(process.cwd(), "/package.json"), 'utf8'));
         packageJson.name && _evalArgs.push(packageJson.name);
     }
     return _evalArgs.join(' ');
 }
 try {
-    console.log(child_process_1.execSync(__dirname + "/exec.sh " + parseArgs()).toString());
+    console.log((0, child_process_1.execSync)("".concat(__dirname, "/exec.sh ").concat(parseArgs())).toString());
     console.log('done');
 }
 catch (error) {

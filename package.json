@@ -1,6 +1,6 @@
 {
   "name": "firebase-auto-env",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "read .env for firebase",
   "main": "bin/index.js",
   "scripts": {
@@ -15,5 +15,9 @@
     "env"
   ],
   "author": "tkow",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^17.0.31",
+    "typescript": "^4.6.4"
+  }
 }

@@ -24,7 +24,7 @@ texts=$(cat "$1" | grep -v ^\#)
 
 for line in $texts
 do
-  args+=( $namespace.$( echo $line | awk -F'=' '{print tolower($1)"="$2 }' ) )
+  args+=( $namespace.$( echo $line | awk -F'=' '{st = index($0,"="); print tolower($1)"="substr($0, st+1)}' ) )
 done;
 
 if [ ! "$TEST_FLAG" ]; then
