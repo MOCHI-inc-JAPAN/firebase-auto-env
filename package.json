@@ -4,7 +4,7 @@
   "description": "read .env for firebase",
   "main": "bin/index.js",
   "scripts": {
-    "test": "test",
+    "test": "npm run build && node bin/index.js --test .env ",
     "build": "tsc"
   },
   "bin": {
