@@ -1,9 +1,11 @@
 {
   "name": "firebase-auto-env",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "read .env for firebase",
   "main": "bin/index.js",
-  "files": ["bin"],
+  "files": [
+    "bin"
+  ],
   "scripts": {
     "test": "npm run build && node bin/index.js --test .env ",
     "build": "tsc"
